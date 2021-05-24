@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://unpkg.com/vue/dist/vue.js"></script>
+    <style>
+        .center,.left,.right{
+            border:1px solid red;
+            height:1000px;
+        }
+        .left{
+            width:20%;
+            position:absolute;
+            left:0;
+            top:0;
+            background-color: cyan;
+        }
+        .center{
+            width:40%;
+            position:absolute;
+            left:20%;
+            top:0;
+            background-color:darkcyan;
+        }
+        .right{
+            width:40%;
+            position:absolute;
+            left:60%;
+            top:0;
+            background-color:darkturquoise;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="notbook">
+        <div class="left">left</div>
+        <div class="center">center</div>
+        <div class="right">right</div>
+    </div>
+</body>
+</html>

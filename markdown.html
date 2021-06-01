@@ -36,10 +36,13 @@
                 }
             },
             watch:{
-                content(val,oldval){
-                    console.log("new:",val,"old",oldval)
-                    localStorage.setItem('content',val)
+                content(){
+                    // console.log("new:",val,"old",oldval)
+                    localStorage.setItem('content',this.content)
                 }
+            },
+            created(){
+                this.content=localStorage.getItem('content')
             }
         })
     </script>

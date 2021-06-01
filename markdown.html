@@ -34,6 +34,12 @@
                 previewMArked() {
                     return marked(this.content)
                 }
+            },
+            watch:{
+                content(val,oldval){
+                    console.log("new:",val,"old",oldval)
+                    localStorage.setItem('content',val)
+                }
             }
         })
     </script>
